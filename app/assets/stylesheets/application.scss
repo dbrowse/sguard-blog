@@ -1,16 +1,16 @@
 
 @import "bootstrap-sprockets";
 @import "bootstrap";
-
-
-@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
+@import url('https://fonts.googleapis.com/css?family=Garamond');
 
 body {
   padding-top: 25px;
 }
 
-
-
+.article .sidebar {
+  background: #ccc;
+  padding: 1em;
+}
 @media (min-width: 992px) {
   body {
     padding-top: 56px;
