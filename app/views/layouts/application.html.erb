@@ -23,16 +23,20 @@
             <span class="icon-bar"></span>
           </button>
           <a class="navbar-brand" href="#">SG</a>
-
         </div>
 
 
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
+          <button type="button" class="btn btn-defailt new-post-nav-button">
+            <span class="glyphicon glyphicon-plus"><%= link_to "New Post", new_post_path %>
+            </span>
+          </button>
           <ul class="nav navbar-nav navbar-right">
-            <li pull-left><a href="#">All Posts</a></li>
+
             <li><a href="#">About</a></li>
+            <li><a href="#">Contacts</a></li>
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Menu <span class="caret"></span></a>
               <ul class="dropdown-menu">
@@ -61,21 +65,12 @@
           <!-- Post Content Column -->
           <div class="col-lg-8">
               <%= yield %>
-            <!-- Title -->
-            <div class="add-new-post">
-              <h2 class="mt-4">Describe the problem will contact you
-              </h2>
 
-            </div>
+      
 
 
             <!-- Author -->
             <p class="lead">
-
-              <button type="button" class="btn btn-info"><%= link_to "New Post", new_post_path %>
-                <span class="glyphicon glyphicon-plus"></span>
-              </button>
-
 
             </p>
 
@@ -123,7 +118,7 @@
             <!-- Search Widget -->
             <div class="card my-4 pull-right">
 
-                
+
             </div>
 
 
