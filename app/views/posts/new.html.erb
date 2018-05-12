@@ -1,15 +1,27 @@
 <h1>New Post</h1>
+<!-- Comments Form -->
+<div class="card my-4">
+  <h5 class="card-header">Leave a Comment:</h5>
+  <div class="card-body">
+    <form>
+      <div class="form-group">
+        <textarea class="form-control" rows="3">
+          <%= form_for :post, url: posts_path do |f| %>
+            <p>
+              <%= f.label :title %><br>
+              <%= f.text_field :title %>
+            </p>
+            <p>
+             <%= f.label :body %><br>
+             <%= f.text_area :body %>
+            </p>
 
- <%= form_for :post, url: posts_path do |f| %>
-   <p>
-     <%= f.label :title %><br>
-     <%= f.text_field :title %>
-   </p>
-   <p>
-    <%= f.label :body %><br>
-    <%= f.text_area :body %>
-   </p>
-   <p>
-    <%= f.submit %>
-   </p>
-<% end %>
+         <% end %>
+
+        </textarea>
+      </div>
+      <div class="action">
+        <%= f.submit %>
+      </div>
+  </div>
+</div>

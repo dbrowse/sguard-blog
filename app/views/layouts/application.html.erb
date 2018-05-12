@@ -23,12 +23,15 @@
             <span class="icon-bar"></span>
           </button>
           <a class="navbar-brand" href="#">SG</a>
+
         </div>
+
 
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
           <ul class="nav navbar-nav navbar-right">
+            <li pull-left><a href="#">All Posts</a></li>
             <li><a href="#">About</a></li>
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Menu <span class="caret"></span></a>
@@ -51,19 +54,16 @@
   <body>
 
       <!-- Page Content -->
-      <div class="container">
-        <%= yield %>
+      <div class="container container-fluid">
 
         <div class="row">
 
           <!-- Post Content Column -->
           <div class="col-lg-8">
-
+              <%= yield %>
             <!-- Title -->
             <div class="add-new-post">
               <h2 class="mt-4">Describe the problem will contact you
-
-
               </h2>
 
             </div>
@@ -75,6 +75,8 @@
               <button type="button" class="btn btn-info"><%= link_to "New Post", new_post_path %>
                 <span class="glyphicon glyphicon-plus"></span>
               </button>
+
+
             </p>
 
             <hr>
@@ -97,6 +99,8 @@
             <hr>
 
             <!-- Post Content -->
+
+
             <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, vero, obcaecati, aut, error quam sapiente nemo saepe quibusdam sit excepturi nam quia corporis eligendi eos magni recusandae laborum minus inventore?</p>
 
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, tenetur natus doloremque laborum quos iste ipsum rerum obcaecati impedit odit illo dolorum ab tempora nihil dicta earum fugiat. Temporibus, voluptatibus.</p>
@@ -126,55 +130,12 @@
             </div>
 
 
-            <!-- Comments Form -->
-            <div class="card my-4">
-              <h5 class="card-header">Leave a Comment:</h5>
-              <div class="card-body">
-                <form>
-                  <div class="form-group">
-                    <textarea class="form-control" rows="3"></textarea>
-                  </div>
-                  <button type="submit" class="btn btn-primary">Submit</button>
-                </form>
-              </div>
-            </div>
+
 
             <!-- Single Comment -->
-            <div class="media mb-4">
-              <img class="d-flex mr-3 rounded-circle" src="http://placehold.it/50x50" alt="">
-              <div class="media-body">
-                <h5 class="mt-0">Commenter Name</h5>
-                Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
-              </div>
-            </div>
 
-            <!-- Comment with nested comments -->
-            <div class="media mb-4">
-              <img class="d-flex mr-3 rounded-circle" src="http://placehold.it/50x50" alt="">
-              <div class="media-body">
-                <h5 class="mt-0">Commenter Name</h5>
-                Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
 
-                <div class="media mt-4">
-                  <img class="d-flex mr-3 rounded-circle" src="http://placehold.it/50x50" alt="">
-                  <div class="media-body">
-                    <h5 class="mt-0">Commenter Name</h5>
-                    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
-                  </div>
-                </div>
 
-                <div class="media mt-4">
-                  <img class="d-flex mr-3 rounded-circle" src="http://placehold.it/50x50" alt="">
-                  <div class="media-body">
-                    <h5 class="mt-0">Commenter Name</h5>
-                    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
-                  </div>
-                </div>
-
-              </div>
-            </div>
-
-          </div>
 
           <!-- Sidebar Widgets Column -->
           <div class="col-md-4">
@@ -198,14 +159,7 @@
 
                     </ul>
                   </div>
-                  <div class="col-lg-6">
-                    <ul class="list-unstyled mb-0">
-
-                      <li>
-                        <a href="#">Tutorials</a>
-                      </li>
-                    </ul>
-                  </div>
+                  <
                 </div>
               </div>
             </div>
@@ -223,8 +177,29 @@
         </div>
         <!-- /.row -->
 
+
+
+
       </div>
       <!-- /.container -->
+
+      <div class="container-fluid">
+         <div class="row">
+            <div class="col-12 col-md-8" style="background-color:orange">.col-12 .col-md-8</div>
+            <div class="col-6 col-md-4" style="background-color:lightblue">.col-6 .col-md-4</div>
+
+         </div>
+
+
+      </div>
+      <div class="row">
+        <div class=".col-12 .col-sm-6 .col-lg-8" style="background-color:orange">
+          <p>Left to the screen</p>
+        </div>
+        <div class="col-6 .col-lg-4" style="background-color:lightblue">
+          <p>Right to the screen</p>
+        </div>
+      </div>
 
       <!-- Footer -->
       <footer class="py-5 bg-dark">
