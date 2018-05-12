@@ -1,15 +1,39 @@
-<h1>New Post</h1>
 
- <%= form_for :post, url: posts_path do |f| %>
-   <p>
-     <%= f.label :title %><br>
-     <%= f.text_field :title %>
-   </p>
-   <p>
-    <%= f.label :body %><br>
-    <%= f.text_area :body %>
-   </p>
-   <p>
-    <%= f.submit %>
-   </p>
-<% end %>
+
+
+<div class="container">
+
+  <div class="row">
+    <div class="col-md-8" >
+      <h1>New Post</h1>
+       <%= form_for :post, url: posts_path do |f| %>
+         <div class="form-group new-post-title">
+           <%= f.label :title %>
+         </div>
+
+        <div class="form-group new-post-name">
+           <%= f.text_field :title, autofocus: true, class: "form-control" %>
+        </div>
+
+
+         <div class="form-group">
+            <%= f.label :body %>
+         </div>
+         <div class="form-group">
+            <%= f.text_area :body, autofocus: true, class: "form-control" %>
+          </div>
+           <div class="actions">
+            <%= f.submit "Save post", class: "btn btn-primary" %>
+          </div>
+
+      <% end %>
+    </div>
+    <div class="col-md-4" >
+      <div class="container">
+        <h1> Side bar </h1>
+
+      </div>
+    </div>
+
+  </div>
+</div>
